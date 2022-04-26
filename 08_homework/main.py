@@ -15,7 +15,7 @@ def main():
         shuffled_questions = f.shuffle_questions(questions, number_of_questions)
 
         for item in shuffled_questions:
-            question = q.Question(item['q'], int(item['d']), item['a'])
+            question = q.Question(item['q'], item['d'], item['a'])
 
             print(question.build_question())
             user_answer = question.user_answer()

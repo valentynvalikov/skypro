@@ -5,7 +5,7 @@ class Question:
 
     def __init__(self, question, difficulty, correct_answer):
         self._question = question
-        self._difficulty = difficulty
+        self._difficulty = int(difficulty)
         self._correct_answer = correct_answer
         self._mark = self._difficulty * 10
 
